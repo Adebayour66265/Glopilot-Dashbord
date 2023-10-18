@@ -12,7 +12,7 @@ const Sidebar = () => {
           <span>
             <i class="ri-taxi-line"></i>
           </span>{" "}
-          UberX
+          Glopilot 
         </h2>
       </div>
 
@@ -31,6 +31,7 @@ const Sidebar = () => {
 
                   {item.display}
                 </NavLink>
+                
               </li>
             ))}
           </ul>

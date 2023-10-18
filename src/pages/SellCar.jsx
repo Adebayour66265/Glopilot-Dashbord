@@ -10,7 +10,7 @@ const SellCar = () => {
   return (
     <div className="sell__car">
       <div className="sell__car-wrapper">
-        <h2 className="sell__car-title">Sell Cars</h2>
+        <h2 className="sell__car-title">Cars Details</h2>
         <div className="sell__car-top">
           <div className="sell__car-img">
             <h2>2022 Mercedes Benz</h2>

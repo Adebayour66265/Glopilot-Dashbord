@@ -12,7 +12,7 @@ const navLinks = [
   {
     path: "/sell-car",
     icon: "ri-shopping-bag-line",
-    display: "Sell Cars",
+    display: "Cars Details",
   },
   {
     path: "/settings",
