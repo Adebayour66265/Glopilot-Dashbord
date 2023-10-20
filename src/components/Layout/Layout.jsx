@@ -5,7 +5,7 @@ import TopNav from "../TopNav/TopNav";
 
 const Layout = () => {
   return (
-    <div className="layout">
+    <div >
       <Sidebar />
       <div className="main__layout">
         <TopNav />

@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import navLinks from "../../assets/dummy-data/navLinks";
 import "./sidebar.css";
 
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
