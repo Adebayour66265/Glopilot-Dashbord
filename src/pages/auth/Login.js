@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { BiLogIn } from "react-icons/bi";
 // import Card from '../../component/Card/Card';
@@ -12,7 +12,7 @@ const Login = () => {
   const handleInputChange = () => {};
   // const loginUser = () => {};
   return (
-    <>
+  
       <div className="container">
         <div className="first-div">
           <div className="learnweb3">
@@ -50,23 +50,25 @@ const Login = () => {
               onChange={handleInputChange}
             />
 
-            <button className="form__button" type="submit">
+            {/* <button className="form__button" type="submit">
               Continue
-            </button>
+            </button> */}
+            <Link className="form__button" to="/dashboard">
+            Continue
+            </Link>
             <p className="form__text">
               <Link className="form__link" to="/forgot">
                 Forgot your password?
               </Link>
             </p>
-            <p className="form__text">
+            {/* <p className="form__text">
               <Link className="form__link" to="/register">
                 Don't have an account? Create account
               </Link>
-            </p>
+            </p> */}
           </form>
         </div>
       </div>
-    </>
   );
 };
 

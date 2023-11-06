@@ -1,14 +1,15 @@
 import React from "react";
 import Router from "../../routes/Router";
-import Sidebar from "../Sidebar/Sidebar";
-import TopNav from "../TopNav/TopNav";
+// import Sidebar from "../Sidebar/Sidebar";
+// import TopNav from "../TopNav/TopNav";
+
 
 const Layout = () => {
   return (
     <div >
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="main__layout">
-        <TopNav />
+        {/* <TopNav /> */}
 
         <div className="content">
           <Router />

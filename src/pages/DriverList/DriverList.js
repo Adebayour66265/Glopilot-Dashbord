@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "../../components/search/Search";
 import ReactPaginate from "react-paginate";
-import './UserList.css'
+import './DriverList.css'
 import { FaTrashAlt } from "react-icons/fa";
 import "../../styles/dashboard.css";
 import SingleCard from "../../components/reuseable/SingleCard";
@@ -9,28 +9,28 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import TopNav from "../../components/TopNav/TopNav";
 import ChangeRole from "../../components/changeRole/ChangeRole";
 
-const UserList = () => {
+const DriverList = () => {
   const carObj = {
-    title: "Unverified Users",
-    totalNumber: "10k",
+    title: "Unverified Drivers",
+    totalNumber: "1k",
     icon: "ri-user-line",
   };
 
   const tripObj = {
-    title: "Total Users",
-    totalNumber: "120k",
+    title: "Total Drivers",
+    totalNumber: "20k",
     icon: "ri-user-line",
   };
 
   const clientObj = {
-    title: "Verified Users",
-    totalNumber: "85k",
+    title: "Verified Drivers",
+    totalNumber: "10k",
     icon: "ri-user-line",
   };
 
   const distanceObj = {
-    title: "Suspended Users",
-    totalNumber: 2167,
+    title: "Suspended Drivers",
+    totalNumber: 9367,
     icon: "ri-user-line",
   };
 
@@ -75,9 +75,9 @@ const UserList = () => {
             <tbody>
               <tr>
                 <td>1</td>
-                <td>name of the user</td>
+                <td>name of the driver</td>
                 <td>email@gmail.com</td>
-                <td>admin</td>
+                <td>driver</td>
                 <td>
                 <ChangeRole/>
                 </td>
@@ -90,10 +90,10 @@ const UserList = () => {
              
             </tbody>  <tbody>
               <tr>
-                <td>1</td>
-                <td>name of the user</td>
+                <td>2</td>
+                <td>name of the driver</td>
                 <td>email@gmail.com</td>
-                <td>admin</td>
+                <td>driver</td>
                 <td>
                 <ChangeRole/>
                 </td>
@@ -106,10 +106,10 @@ const UserList = () => {
              
             </tbody>  <tbody>
               <tr>
-                <td>1</td>
-                <td>name of the user</td>
+                <td>3</td>
+                <td>name of the driver</td>
                 <td>email@gmail.com</td>
-                <td>admin</td>
+                <td>user</td>
                 <td>
                 <ChangeRole/>
                 </td>
@@ -122,10 +122,10 @@ const UserList = () => {
              
             </tbody>  <tbody>
               <tr>
-                <td>1</td>
-                <td>name of the user</td>
+                <td>4</td>
+                <td>name of the driver</td>
                 <td>email@gmail.com</td>
-                <td>admin</td>
+                <td>Suspended</td>
                 <td>
                   <ChangeRole/>
                 </td>
@@ -163,4 +163,4 @@ const UserList = () => {
   );
 };
 
-export default UserList;
+export default DriverList;

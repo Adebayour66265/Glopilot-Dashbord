@@ -1,10 +1,15 @@
 import React from "react";
+import { useContext } from "react";
 
 import { Link } from "react-router-dom";
 import profileImg from "../../assets/images/profile-02.png";
 import "./top-nav.css";
+import { DarkModeContext } from "../../context/darkModeContext";
+
 
 const TopNav = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="top__nav">
       <div className="top__nav-wrapper">
@@ -15,9 +20,15 @@ const TopNav = () => {
           </span>
         </div>
         <div className="top__nav-right">
-          <span className="notification">
+        <span className="notification">
             <i class="ri-notification-3-line"></i>
             <span className="badge">1</span>
+          </span> <span className="notification">
+            <i class="ri-notification-3-line"></i>
+            <span
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
+            />
           </span>
           <div className="profile">
             <Link to="/settings">

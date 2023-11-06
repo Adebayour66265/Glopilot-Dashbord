@@ -4,11 +4,32 @@
   padding: 0px 30px;
   padding-bottom: 50px;
 }
-
+.search-back{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  background: #fff !important;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+.search-back input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--small-text-color);
+}
 .booking__title {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 2rem;
+}
+.car__details{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .filter__widget-wrapper {

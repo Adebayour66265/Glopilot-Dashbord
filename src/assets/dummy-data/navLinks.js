@@ -5,36 +5,49 @@ const navLinks = [
     display: "Dashboard",
   },
   {
-    path: "/allCars",
-    icon: "ri-taxi-line",
-    display: "All Cars",
+    path: "/allCars ",
+    icon: "ri-apps-2-line",
+    display: "Ride Management",
+  },
+  {
+    path: "/admin",
+    icon: "ri-apps-2-line",
+    display: "Admin Management",
+  },
+  {
+    path: "/users",
+    icon: "ri-apps-2-line",
+    display: "User Management",
   },
   {
     path: "/singleCar",
-    icon: "ri-shopping-bag-line",
-    display: "Cars Details",
-  },
-   {
-    path: "/profile",
-    icon: "ri-user-line",
-    display: "Profile",
-  },{
-    path: "/",
     icon: "ri-taxi-line",
-    display: "Manage Driver",
-  },{
-    path: "/users",
-    icon: "ri-user-line",
-    display: "Manage User",
-  },{
-    path: "/login",
-    icon: "ri-settings-2-line",
-    display: "Login",
+    display: "Vehicle Management",
   },
   {
-    path: "/settings",
+    path: "/payment",
+    icon: "ri-shopping-bag-line",
+    display: "Pricing and Payment",
+  },
+  {
+    path: "/map",
+    icon: "ri-user-line",
+    display: "Geolocation and Mapping",
+  },
+  {
+    path: "/drivers",
+    icon: "ri-taxi-line",
+    display: "Manage Driver",
+  },
+  {
+    path: "/",
     icon: "ri-settings-2-line",
-    display: "Settings",
+    display: "Customer Support",
+  },
+  {
+    path: "/feedback",
+    icon: "ri-user-line",
+    display: "Feedback and Ratings",
   },
 ];
 

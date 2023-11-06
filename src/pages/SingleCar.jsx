@@ -3,38 +3,37 @@ import "../styles/bookings.css";
 
 import carData from "../assets/dummy-data/booking-cars.js";
 import CarItem from "../components/UI/CarItem";
+import Sidebar from "../components/Sidebar/Sidebar.jsx";
+import TopNav from "../components/TopNav/TopNav.jsx";
 
 const Bookings = () => {
   return (
-    <div className="bookings">
-      <div className="booking__wrapper">
-        <h2 className="booking__title">All Register Cars</h2>
+    <>
+      <Sidebar />
+      <TopNav />
+      <div className="bookings">
+        <div className="booking__wrapper">
+          <h2 className="booking__title">All Register Cars</h2>
 
-        <div className="filter__widget-wrapper">
-          <div className="filter__widget-01">
-            <select>
-              <option value="New">New</option>
-              <option value="Popular">Popular</option>
-              <option value="Upcoming">Upcoming</option>
-            </select>
+          <div className="filter__widget-wrapper">
+            <div className="filter__widget-01">
+              <div className="search-back">
+                <input type="text" placeholder="search or type" />
+                <span>
+                  <i class="ri-search-line"></i>
+                </span>
+              </div>
+            </div>
           </div>
 
-          <div className="filter__widget-01">
-            <select>
-              <option value="toyota">Toyota</option>
-              <option value="bmw">Bmw</option>
-              <option value="audi">Audi</option>
-            </select>
+          <div className="booking__car-list">
+            {carData?.map((item) => (
+              <CarItem item={item} key={item.id} />
+            ))}
           </div>
-        </div>
-
-        <div className="booking__car-list">
-          {carData?.map((item) => (
-            <CarItem item={item} key={item.id} />
-          ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
