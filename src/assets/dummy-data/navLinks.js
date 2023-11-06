@@ -9,11 +9,11 @@ const navLinks = [
     icon: "ri-apps-2-line",
     display: "Ride Management",
   },
-  {
-    path: "/admin",
-    icon: "ri-apps-2-line",
-    display: "Admin Management",
-  },
+  // {
+  //   path: "/admin",
+  //   icon: "ri-apps-2-line",
+  //   display: "Admin Management",
+  // },
   {
     path: "/users",
     icon: "ri-apps-2-line",
@@ -40,7 +40,7 @@ const navLinks = [
     display: "Manage Driver",
   },
   {
-    path: "/",
+    path: "/chat",
     icon: "ri-settings-2-line",
     display: "Customer Support",
   },

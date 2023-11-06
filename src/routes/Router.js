@@ -17,7 +17,12 @@ import Profile from "../pages/profile/Profile";
 import New from "../pages/new/New";
 import List from "../components/list/List";
 import { userInputs } from "../formSource";
-import Conversations from "../components/chatPage/Conversations";
+import ContentMain from '../components/ContentMain/ContentMain';
+import ChatBody from "../components/chatBody/ChatBody";
+
+
+
+
 
 const Router = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -42,7 +47,9 @@ const Router = () => {
             <Route path="/drivers" element={<Driver />} />
             <Route path="/profile" element={<Profile />} />
 
-            <Route path="/con" element={<Conversations />} />
+            <Route path="/payment" element={<ContentMain />} />
+            <Route path="/chat" element={<ChatBody />} />
+
 
             {/* users roles */}
             <Route path="user">
