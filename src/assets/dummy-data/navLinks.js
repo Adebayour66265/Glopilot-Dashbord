@@ -6,7 +6,7 @@ const navLinks = [
   },
   {
     path: "/allCars ",
-    icon: "ri-apps-2-line",
+    icon: "ri-taxi-line",
     display: "Ride Management",
   },
   // {
@@ -16,7 +16,7 @@ const navLinks = [
   // },
   {
     path: "/users",
-    icon: "ri-apps-2-line",
+    icon: "ri-user-3-line",
     display: "User Management",
   },
   {
@@ -26,12 +26,12 @@ const navLinks = [
   },
   {
     path: "/payment",
-    icon: "ri-shopping-bag-line",
+    icon: "ri-currency-fill",
     display: "Pricing and Payment",
   },
   {
     path: "/map",
-    icon: "ri-user-line",
+    icon: "ri-map-pin-user-fill",
     display: "Geolocation and Mapping",
   },
   {
@@ -41,12 +41,12 @@ const navLinks = [
   },
   {
     path: "/chat",
-    icon: "ri-settings-2-line",
+    icon: "ri-chat-3-line",
     display: "Customer Support",
   },
   {
     path: "/feedback",
-    icon: "ri-user-line",
+    icon: "ri-feedback-line",
     display: "Feedback and Ratings",
   },
 ];
