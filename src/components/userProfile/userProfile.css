@@ -62,7 +62,7 @@
 .profile__card .card__header i {
   font-size: 20px;
 }
-.card__content {
+.card__content-chat {
   border-top: 1px solid #ebe7fb;
   overflow: auto;
   width: 100%;

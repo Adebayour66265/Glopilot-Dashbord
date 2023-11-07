@@ -11,12 +11,8 @@ import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import ForgetPassword from "../pages/auth/Forgot";
 import Users from "../pages/UserList/UserList";
-import Single from "../pages/single/Single";
 import Driver from "../pages/DriverList/DriverList";
 import Profile from "../pages/profile/Profile";
-import New from "../pages/new/New";
-import List from "../components/list/List";
-import { userInputs } from "../formSource";
 import ContentMain from '../components/ContentMain/ContentMain';
 import ChatBody from "../components/chatBody/ChatBody";
 
@@ -51,23 +47,10 @@ const Router = () => {
             <Route path="/chat" element={<ChatBody />} />
 
 
-            {/* users roles */}
-            <Route path="user">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
-              <Route
-                path="new"
-                element={<New inputs={userInputs} title="Add New User" />}
-              />
-              <Route
-                path="new"
-                element={<New inputs={userInputs} title="Add New Admin" />}
-              />
-            </Route>
+         
           </Routes>
         </div>
       </div>
-      <Routes>{/* <Route path="/login" element={<Login />} /> */}</Routes>
     </>
   );
 };
