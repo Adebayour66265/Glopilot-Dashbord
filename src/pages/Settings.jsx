@@ -55,10 +55,17 @@ const Settings = () => {
                   <label>Date of Birth</label>
                   <input type="date" placeholder="dd/mm/yyyy" />
                 </div>
-
                 <div>
                   <label>Gender</label>
                   <input type="text" placeholder="Male" />
+                </div>
+                <div>
+                  <label>social security</label>
+                  <input type="text" placeholder="social security " />
+                </div>
+                <div>
+                  <label>NIM</label>
+                  <input type="text" placeholder="NIM" />
                 </div>
               </div>
 
